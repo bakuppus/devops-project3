@@ -1,0 +1,15 @@
+# Default values for devapp.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: 18.219.249.212:8081/kierandocker/tomcat8
+  tag: latest
+  pullPolicy: IfNotPresent
+
+
+service:
+  type: NodePort
+  port: 8080
