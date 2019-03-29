@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: 18.219.249.212:8081/kierandocker/tomcat8
+  repository: 702401326258.dkr.ecr.us-east-1.amazonaws.com/devopsproj3
   tag: latest
   pullPolicy: IfNotPresent
 

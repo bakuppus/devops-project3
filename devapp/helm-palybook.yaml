@@ -1,0 +1,12 @@
+---
+
+- name: run the playbook tasks on the localhost
+  hosts: all
+  become: yes
+  become_user: centos
+  tasks:
+
+  - name: print out the hostname of target
+    command: id
+  - name: Execute shell script
+    command: sh ./helm-run.sh 
